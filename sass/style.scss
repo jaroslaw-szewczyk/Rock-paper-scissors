@@ -1,0 +1,51 @@
+/*Global*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    height: 100vh;
+}
+
+.card {
+    border: 2px solid #d81159;
+    border-radius: 5px;
+    margin: 10px;
+    width: 270px;
+    height: 270px;
+    background: #73d2de;
+    transition: background .5s linear;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Player cards */
+
+.player-cards {
+    .player-card {
+        
+        
+        &:hover {
+            background: #2a9d8f;
+        }
+    }
+}
+
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-board {
+    border: 2px solid #e76f51;
+    border-radius: 5px;
+}

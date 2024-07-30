@@ -1,3 +1,44 @@
+/*Global*/
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.container {
+  max-width: 1140px;
+  margin: auto;
+  height: 100vh;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.card {
+  border: 2px solid #d81159;
+  border-radius: 5px;
+  margin: 10px;
+  width: 270px;
+  height: 270px;
+  background: #73d2de;
+  transition: background 0.5s linear;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Player cards */
+.player-cards .player-card:hover {
+  background: #2a9d8f;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-board {
+  border: 2px solid #e76f51;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFBO0FBRUE7RUFDSSxTQUFBO0VBQ0EsVUFBQTtFQUNBLHNCQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0FDQUo7O0FER0E7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQ0FBQTtBQ0FKOztBREdBO0VBQ0ksYUFBQTtFQUNBLHVCQUFBO0FDQUo7O0FER0EsaUJBQUE7QUFNUTtFQUNJLG1CQUFBO0FDTFo7O0FEV0E7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7QUNSSjs7QURXQTtFQUNJLHlCQUFBO0VBQ0Esa0JBQUE7QUNSSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
