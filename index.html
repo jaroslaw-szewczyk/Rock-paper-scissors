@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div class="new-game-container">
-			<button type="button" class="new-game">New Game</button>
-			<button type="button" id="rules">Rules</button>
-		</div>
 		<div class="wrapper">
 			<div class="game-board">
 				<div class=" wrapper computer-cards">
@@ -18,8 +17,10 @@
 					<div class="card com-card" id="com-paper-card"></div>
 					<div class="card com-card" id="com-scissors-card"></div>
 				</div>
-				<div class="fighting-arena">
+				<div class="arena">
+					<div class="card"></div>
 					<h2>Vs</h2>
+					<div class="card"></div>
 				</div>
 				<div class="wrapper player-cards">
 					<div class="card player-card" id="player-rock-card">
@@ -35,11 +36,17 @@
 				<h2>choose a card</h2>
 			</div>
 			<div class="result-board">
-				<h2>Computer</h2>
-				<p>0</p>
-				<button type="button" class="new-game">New Game</button>
-				<h2>Player</h2>
-				<p>0</p>
+				<div class="wrapper">
+					<div class="comp-result">
+						<h2>Computer</h2>
+						<p>0</p>
+					</div>
+					<a class="new-game">New Game</a>
+					<div class="player-rseult">
+						<p>0</p>
+						<h2>Player</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
