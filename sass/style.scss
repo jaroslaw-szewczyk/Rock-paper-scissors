@@ -22,7 +22,7 @@ body {
     width: 270px;
     height: 270px;
     background: #73d2de;
-    transition: background .5s linear;
+    transition: background .5s linear, opacity .5s linear;
 
 }
 
@@ -37,6 +37,14 @@ h2 {
 
 p {
     font-size: 36px;
+}
+
+.display-opt {
+    opacity: 0;   
+}
+
+.choise {
+    background:  #2a9d8f;
 }
 
 /* game-board */
@@ -56,7 +64,7 @@ p {
         justify-content: center;
         align-items: center;
         height: 300px;
-        
+
         h2 {
             font-size: 80px;
         }
@@ -71,7 +79,6 @@ p {
 
         &:hover {
             background: #2a9d8f;
-            border: 2px solid #d81159;
         }
     }
 }
@@ -97,6 +104,7 @@ p {
             border: 2px solid #fff;
             width: 80%;
             padding: 15px;
+            transition: background .3s linear;
 
             &:hover {
                 background: #2a9d8f;

@@ -13,23 +13,33 @@
 		<div class="wrapper">
 			<div class="game-board">
 				<div class=" wrapper computer-cards">
-					<div class="card com-card" id="com-rock-card"></div>
-					<div class="card com-card" id="com-paper-card"></div>
-					<div class="card com-card" id="com-scissors-card"></div>
-				</div>
-				<div class="arena">
-					<div class="card"></div>
-					<h2>Vs</h2>
-					<div class="card"></div>
-				</div>
-				<div class="wrapper player-cards">
-					<div class="card player-card" id="player-rock-card">
+					<div class="card com-card" id="com-rock">
 						<img src="images/rock.png" alt="sign of the stone">
 					</div>
-					<div class="card player-card" id="player-paper-card">
+					<div class="card com-card" id="com-paper">
 						<img src="images/paper.png" alt="sign of the paper">
 					</div>
-					<div class="card player-card" id="player-scissors-card">
+					<div class="card com-card" id="com-scissors">
+						<img src="images/scissors.png" alt="sign of the scissors">
+					</div>
+				</div>
+				<div class="arena">
+					<div class="card display-opt" id="com-choise-box">
+						<img src=" " alt="" id="com-choise-card">
+					</div>
+					<h2>Vs</h2>
+					<div class="card display-opt" id="player-choise-box">
+						<img src=" " alt="" id="player-choise-card">
+					</div>
+				</div>
+				<div class="wrapper player-cards">
+					<div class="card player-card" id="rock">
+						<img src="images/rock.png" alt="sign of the stone">
+					</div>
+					<div class="card player-card" id="paper">
+						<img src="images/paper.png" alt="sign of the paper">
+					</div>
+					<div class="card player-card" id="scissors">
 						<img src="images/scissors.png" alt="sign of the scissors">
 					</div>
 				</div>
@@ -39,11 +49,12 @@
 				<div class="wrapper">
 					<div class="comp-result">
 						<h2>Computer</h2>
-						<p>0</p>
+						<p id="com-count">0</p>
 					</div>
-					<a class="new-game">New Game</a>
+					<a class="new-game" id="new-game-btn">Next Game</a>
+					<p id="messages"></p>
 					<div class="player-rseult">
-						<p>0</p>
+						<p id="player-count">0</p>
 						<h2>Player</h2>
 					</div>
 				</div>
