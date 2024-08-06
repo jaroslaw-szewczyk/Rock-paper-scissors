@@ -24,7 +24,7 @@
   
     
   //Adding classes to computer DOM elements
-  function addClassToComCard(argMove) {
+  const addClassToComCard = function(argMove) {
     if(argMove == "rock") {
       rockCard.classList.add("display-opt");
       comChoiseBox.classList.remove("display-opt");
@@ -41,7 +41,7 @@
   }
 
   // Adding classes to player DOM elements
-  function addClassToPlayerCard(argMove) {
+  const addClassToPlayerCard = function(argMove) {
     if(argMove == "rock") {
       rockBtn.classList.add("choise", "display-opt");
       playerChoiseBox.classList.add("choise");
@@ -61,7 +61,7 @@
   }
 
   // Removal of all added classes from DOM
-  function removeClass(){
+  const removeClass = function(){
   rockCard.classList.remove("choise", "display-opt");
   paperCard.classList.remove("choise", "display-opt");
   scissorsCard.classList.remove("choise", "display-opt");
@@ -75,7 +75,7 @@
   } 
 
   //the function responsible for assigning the appropriate value to players
-  function getMoveName(argMoveId){
+  const getMoveName = function(argMoveId){
     if(argMoveId == 1) {
       return "rock";
     } else if(argMoveId == 2) {
@@ -88,7 +88,7 @@
   }
 
 // Function responsible for displaying the result of the game
-  function displayResult(argComputerMove, argPlayerMove){
+  const displayResult = function(argComputerMove, argPlayerMove){ 
     if(argComputerMove == "rock" && argPlayerMove == "paper"){
         playerCount.innerHTML = playerResult += 1;
         printMessage("You win");
@@ -110,7 +110,7 @@
 
   
   // Main game function
-  function playGame(playerChoice) {
+  const playGame = function(playerChoice) {
 
     //cleaning and removing unnecessary elements from the board
     clearMessages();
@@ -145,5 +145,4 @@
     clearMessages();
     removeClass();
   });
-
 }
